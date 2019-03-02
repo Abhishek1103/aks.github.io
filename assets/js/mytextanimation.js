@@ -1,4 +1,4 @@
-var invites = ['W A R L O R D']
+var invites = [ 'Coder | Developer | Thinker | Athlete', 'W A R L O R D']
 var ind=0;
 var inv_size=invites.length;
 function printit() {
@@ -12,6 +12,6 @@ function printit() {
         // loop: true,
         // loopDelay: 1500
     });
-    setTimeout(printit, 3000);
+    setTimeout(printit, 8000);
 }
 $(document).ready(printit());
