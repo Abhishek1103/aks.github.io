@@ -635,6 +635,7 @@
   <script src="./assets/js/mytextanimation.js"></script>
   <script src="./assets/js/myprojecttimeline.js"></script>
   <script src="./assets/js/scrolltotop.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js" type="text/javascript"></script>
   <script>
 
     function scrollToDownload() {
@@ -645,6 +646,27 @@
         }, 1000);
       }
     }
+  </script>
+
+  <!-- <script>
+    //$( document ).ready(function() {
+      var sound = new Howl({
+      //src: ['./media/sound.mp3']
+        src: ['/home/aks/Documents/MyGithubRepo/aks.github.io/media/sound.mp3']
+      });
+      //sound.play();
+    //});
+
+    sound.once('load', function(){
+      sound.play();
+    });
+    
+  </script> -->
+  <audio id="my_audio" src="./media/sound.mp3" loop="loop"></audio>
+  <script>
+    $(document).ready(function() {
+      $("#my_audio").get(0).play();
+    });
   </script>
 </body>
 
