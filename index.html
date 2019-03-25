@@ -651,26 +651,34 @@
     }
   </script>
 
-  <!-- <script>
-    //$( document ).ready(function() {
-      var sound = new Howl({
-      //src: ['./media/sound.mp3']
-        src: ['/home/aks/Documents/MyGithubRepo/aks.github.io/media/sound.mp3']
-      });
-      //sound.play();
-    //});
+   <script>
+     $(document).ready(function(){
+        var sound = new Howl({
+          src: ['./media/sound.mp3'],
+          volume: 0.5
+        })
+        sound.play();
+     });
+    // // jQuery(document).ready(function($) {
+    //   var sound = new Howl({
+    //   src: ['./media/sound.mp3'],
+    //   volume: 0.2
+    //    // src: ['/home/aks/Documents/MyGithubRepo/aks.github.io/media/sound.mp3']
+    //   });
+    //   sound.play();
+    // // });
 
-    sound.once('load', function(){
-      sound.play();
-    });
-    
-  </script> -->
-  <audio id="my_audio" src="./media/sound.mp3" loop="loop"></audio>
-  <script>
+    // // sound.once('load', function(){
+    // //   sound.play();
+    // // });
+  </script>
+
+  <!-- <audio id="my_audio" src="./media/sound.mp3" loop="loop"></audio> -->
+  <!-- <script>s
     $(document).ready(function() {
       $("#my_audio").get(0).play();
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
