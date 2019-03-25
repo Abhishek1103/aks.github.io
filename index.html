@@ -126,7 +126,7 @@
             <h3 id="replaceStrings">Coder | Developer | Thinker | Athlete </h3>
             <p id="_replaceStrings" class="text-white" style="margin-bottom: 1em"></p>
             <div class="col-md-12">
-              <a href="#about_me" class="btn btn-white btn-lg btn-round" role="button">
+              <a href="#about_me" id="button_about_me" class="btn btn-white btn-lg btn-round" role="button">
                 About Me
               </a>
             </div>
@@ -243,10 +243,10 @@
                   <div class="row justify-content-center">
                       <div class="col-xs-12">
                         <div class="text-center">
-                            <a href="#contact" class="btn btn-simple btn-lg btn-round text-center" role="button">
+                            <a href="#contact" id="button_contact_me" class="btn btn-simple btn-lg btn-round text-center" role="button">
                                 Contact Me
                               </a>
-                              <a  href="./assets/pdfs/Abhishek Kumar Singh_Resume.pdf" class="btn btn-primary btn-lg btn-round text-center" role="button" target="_blank">
+                              <a  href="./assets/pdfs/Abhishek Kumar Singh_Resume.pdf" id="button_download_resume" class="btn btn-primary btn-lg btn-round text-center" role="button" target="_blank">
                                   Download Resume
                                 </a>
                         </div>
@@ -656,7 +656,7 @@
         var sound = new Howl({
           src: ['./media/rocp.mp3'],
           loop: true,
-          volume: 0.5
+          volume: 0.2
         })
         sound.play();
      });
